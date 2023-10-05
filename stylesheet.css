@@ -1,0 +1,100 @@
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-grad-skyblue{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(0, 204, 255) 10%, rgb(0, 204, 255) 90%, rgba(255, 255, 255, 0) 100%);
+  color: #fff;
+}
+
+.bg-grad-blue{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(64, 64, 225) 10%, rgba(64, 64, 225) 90%, rgba(255, 255, 255, 0) 100%);
+  color: #fff;
+}
+
+.lecture{
+  display:flex;
+}
+
+.lecture img{
+  height: 250px;
+  width: 250px;
+}
+
+.clogo{
+  padding: 3%;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  align-content: center;
+  vertical-align: middle;
+}
+.circleblock{
+  padding: 3% 0;
+}
+
+.box {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.text {
+  text-align: left;
+}
+
+.pict img {
+  height:auto;
+  width: 250px;
+}
+
+.title {
+  font-size: 40pt;
+  font-family: "メイリオ", "Meiryo", "ＭＳ ゴシック",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-weight: bold;
+}
+
+.no-gutters {
+  margin: 0;
+  padding: 0;
+}
+
+.no-gutters　 > .col,
+.no-gutters　 > [class*="col-"] {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:768px) {
+  .box {
+    flex-direction: column;
+  }
+  .box:nth-child(even) {
+    flex-direction: column;
+  }
+  .text {
+    text-align: center;
+  }
+  .box:nth-child(even) .text {
+    text-align: center;
+  }
+  .pict {
+    width:100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .pict img {
+    margin: auto;
+    width:50%;
+    height:auto;
+  }
+  
+}
