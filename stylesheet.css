@@ -119,5 +119,8 @@ section#timetable th {
     width:50%;
     height:auto;
   }
-  
+
+section#timetable table {
+  width: 70%;
+}
 }
