@@ -73,6 +73,29 @@
   padding: 0;
 }
 
+/* id="timetable"が設定されたsection内のtableにだけ適用 */
+section#timetable table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+section#timetable th,
+section#timetable td {
+  border: 2px solid rgb(255, 255, 255);
+  text-align: left;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+section#timetable th {
+  background-color: #d5d5d5;
+  border: 2px solid rgb(167, 167, 167);
+  padding: 0px;
+  text-align: left;
+  padding-left: 1.4vw;
+}
 @media (max-width:768px) {
   .box {
     flex-direction: column;
